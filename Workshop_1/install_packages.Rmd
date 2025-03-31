@@ -1,0 +1,12 @@
+```{r setup, include=FALSE}
+install.packages('renv')
+renv::init()
+```
+
+
+```{r}
+packages <- c("tidyverse", "data.table", "fixest")
+
+renv::install(packages)
+renv::snapshot()
+```
