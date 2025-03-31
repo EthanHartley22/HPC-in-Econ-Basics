@@ -208,7 +208,8 @@ There are three primary methods of storing data on Koa.
 ![Example](https://img.shields.io/badge/Example:%20Requesting%20compute%20&%20exploring%20storage%20volumes-indigo?style=for-the-badge)
   - Submit an interactive job
   - Explore the "Files" tab on OOD
-  - Connect to the shell through OOD and explore the home and koa_scratch directories. 
+  - Connect to the shell through OOD and explore the home and koa_scratch directories.
+    - Create a Coding_Workshop directory and clone this repository `git clone https://github.com/EthanHartley22/HPC-in-Econ-Basics.git`
 
 ### __tmux__
 ___
