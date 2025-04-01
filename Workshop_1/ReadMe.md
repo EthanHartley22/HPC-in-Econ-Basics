@@ -209,7 +209,6 @@ There are three primary methods of storing data on Koa.
   - Submit an interactive job
   - Explore the "Files" tab on OOD
   - Connect to the shell through OOD and explore the home and koa_scratch directories.
-    - Create a Coding_Workshop directory and clone this repository `git clone https://github.com/EthanHartley22/HPC-in-Econ-Basics.git`
 
 ### __tmux__
 ___
@@ -362,6 +361,7 @@ Example: `ls --help` lists available options for `ls`.
 ### Using Visual Studio Code
 ___
 ![Example](https://img.shields.io/badge/Example:%20Follow%20along%20with%20VS%20Code%20Setup-indigo?style=for-the-badge)
+- Create a Coding_Workshop directory and clone this repository `git clone https://github.com/EthanHartley22/HPC-in-Econ-Basics.git`
 
 To establish a remote tunnel, follow the steps below:
   1) Connect to your Koa account via the local terminal using ```ssh``` and follow the prompts for two-factor authentication
