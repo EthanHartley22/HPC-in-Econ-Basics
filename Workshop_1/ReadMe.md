@@ -55,16 +55,16 @@ There are a number of ways to request compute on Koa; however, the job request y
 
 The simplest method to request an interactive job is to use the graphical user interface [Open OnDemand](https://koa.its.hawaii.edu/pun/sys/dashboard). 
 
-![image](https://github.com/user-attachments/assets/5b93b106-ed2b-4f65-8603-5045b2315aa3)
+![image](images/image_1.png)
 
 Under the "My Interactive Sessions" tab, you can select whether you would like to request a desktop GUI, Jupyter Lab session, Matlab session, or RStudio Server. 
   - Jupyter Lab and Jupyter Notebook are alternative IDEs to the VS Code setup below. (I prefer the functionality and debugging capabilities of VS Code but feel free to try them both and see which you prefer!) 
 
-![image](https://github.com/user-attachments/assets/d483ad88-b0bf-428a-a608-c6eb8145e921)
+![image](images/image_2.png)
 
 After selecting the appropriate server/desktop, fill out the form to request your desired resources. 
 
-![image](https://github.com/user-attachments/assets/14be8457-c037-4ace-a332-27e9f6a8ae9a)
+![image](images/image_3.png)
 
 ### __Batch Jobs__
 ___
@@ -188,7 +188,8 @@ sbatch <filename>.slurm
 ```
 See the [slurm documentation](https://slurm.schedmd.com/documentation.html) for further resources on submitting batch jobs. 
 
-![Example](https://img.shields.io/badge/Example:%20Writing%20to%20Allow%20Preemption-indigo?style=for-the-badge)
+![Example](images/example_1.svg)
+- Explore `Generate_Monthly_Data_1.py` and the `if` statement which checks for existing files before processing the model-year combination. 
 
 ### __Storage__
 ___
@@ -205,7 +206,7 @@ There are three primary methods of storing data on Koa.
   __*Koa does not automatically back up your work—this is one of the many reasons why the discussion of version control and documentation in Workshop 2 is so important.__  
 
 
-![Example](https://img.shields.io/badge/Example:%20Requesting%20compute%20&%20exploring%20storage%20volumes-indigo?style=for-the-badge)
+![Example](images/example_2.svg)
   - Submit an interactive job
   - Explore the "Files" tab on OOD
   - Connect to the shell through OOD and explore the home and koa_scratch directories.
@@ -360,7 +361,7 @@ Example: `ls --help` lists available options for `ls`.
 
 ### Using Visual Studio Code
 ___
-![Example](https://img.shields.io/badge/Example:%20Follow%20along%20with%20VS%20Code%20Setup-indigo?style=for-the-badge)
+![Example](images/example_3.svg)
 - Create a Coding_Workshop directory and clone this repository `git clone https://github.com/EthanHartley22/HPC-in-Econ-Basics.git`
 
 To establish a remote tunnel, follow the steps below:
@@ -381,7 +382,7 @@ To establish a remote tunnel, follow the steps below:
   4) Request compute, or connect to an existing interactive job using ```srun```
        - I often request an interactive job through Open OnDemand then connect to the existing job within the tmux session. Note that existing job IDs can be found in the upper left corner of each interactive job panel or by running ```squeue -u <username>``` in the command line. 
     
-     ![image](https://github.com/user-attachments/assets/e62e9ccd-71e9-4f99-85ac-f45402e4b321) ![image](https://github.com/user-attachments/assets/867a4d24-8124-4e2d-bd38-7928d99613a8)
+     ![image](images/image_4.png) ![image](images/image_5.png)
 
 
  ```bash
@@ -396,36 +397,36 @@ To establish a remote tunnel, follow the steps below:
  ```bash
  ./code tunnel 
  ```
- ![image](https://github.com/user-attachments/assets/4453b3d5-186f-4642-9669-56a7a2db3744)
- ![image](https://github.com/user-attachments/assets/6cebd1e3-433c-42de-bff0-d0708b3cb73e)
- ![image](https://github.com/user-attachments/assets/449e6480-607d-4f53-986f-2200db3d0eaf)
- ![image](https://github.com/user-attachments/assets/ee3034b1-7f8f-4f5c-a6ca-b2939450aff2)
+ ![image](images/image_6.png)
+ ![image](images/image_7.png)
+ ![image](images/image_8.png)
+ ![image](images/image_9.png)
 
   6) Launch VS Code through the provided link (will open in browser), or detach from the tmux session using ```ctrl+b d``` then open VS Code locally and follow the steps below.
      - Click on the profile icon in the lower left corner and enable Remote Tunnel Access (you should only have to do the first two steps once)
 
-     ![image](https://github.com/user-attachments/assets/aad4fb19-17ff-48e3-8fd4-0f94f49a0031)
+     ![image](images/image_10.png)
 
      - Follow the prompt at the top to enable "for this session" then follow the prompt to sign in with GitHub
 
-     ![image](https://github.com/user-attachments/assets/4b6102af-69f9-4d09-b088-cd251eef6f1c)
-     ![image](https://github.com/user-attachments/assets/9c04bafb-f77d-4236-a750-171d83172ac4)
+     ![image](images/image_11.png)
+     ![image](images/image_12.png)
 
      - Select "Connect to..."
      
-     ![image](https://github.com/user-attachments/assets/fbef286a-3e98-4b7d-a3fd-4f3eb404cdbf)
+     ![image](images/image_13.png)
 
      - Select "Connect to Tunnel..."
      
-     ![image](https://github.com/user-attachments/assets/2e43bf68-110f-4657-93d7-25161e01f89c)
+     ![image](images/image_14.png)
 
      - Select GitHub
      
-     ![image](https://github.com/user-attachments/assets/c3a3c6f4-19c0-4f52-9eb4-24aeb93cb2af)
+     ![image](images/image_15.png)
 
      - Select Koa
        
-     ![image](https://github.com/user-attachments/assets/6da46ab0-ce5b-4e12-b117-52f570c360f7)
+     ![image](images/image_16.png)
 
 ### Using R in Visual Studio Code
 ___
@@ -551,7 +552,7 @@ Selection: 72
 ```
 
 3) Install the R extension within VS Code.
-![image](https://github.com/user-attachments/assets/096b023d-496e-4176-b2db-939351210422)
+![image](images/image_17.png)
 
 4) Within the terminal, activate R and retrieve the path to the executable.
 ```bash
@@ -579,16 +580,16 @@ Type 'q()' to quit R.
 
 5) Set the appropriate paths to the R executable within the R extension:
   - Select the R extension from the left-side panel.
-![image](https://github.com/user-attachments/assets/f81a3b1e-8bee-4942-aaa9-2e56ab90a5cd)
+![image](images/image_18.png)
 
   - Click the cog wheel and select "Settings"
-![image](https://github.com/user-attachments/assets/e40f4bfd-aa77-4344-85c1-f1b28699f772)
+![image](images/image_19.png)
 
   - Type "Path" into the search bar then update the path for "Rpath: Linux" and "Rterm: Linux"
-![image](https://github.com/user-attachments/assets/b54c4aac-2430-4653-baba-17bdd76b7b51)
+![image](images/image_20.png)
 
 You should now be able to edit `.R` and `.Rmd` files in VS Code. Remember if you receive the below message, simply enter `module load lang/R` into the terminal within VS Code. If you encounter any other issues, see [this](https://code.visualstudio.com/docs/languages/r) guide for more details. 
-![image](https://github.com/user-attachments/assets/8697d28c-a878-45cc-a74d-da32af532821)
+![image](images/image_21.png)
 
 
 ## Coding Best Practices
@@ -606,7 +607,7 @@ You can use these tools to maintain a clean and reproducible environment for you
 
 #### 1. Setting Up a Clean Environment on Koa
 
-![Example](https://img.shields.io/badge/Example:%20Follow%20along%20with%20Conda%20Setup-indigo?style=for-the-badge)
+![Example](images/example_4.svg)
 
 Koa offers a flexible system for loading languages and modules. You can find a list of available languages and modules [here](https://uhawaii.atlassian.net/wiki/spaces/HPC/pages/461307905/Module+List). 
 
@@ -1095,7 +1096,7 @@ AI is a powerful tool that can accelerate learning and improve productivity, but
 - Developing confidence in your coding skills without AI, so you are not dependent on it in critical situations.
 - Treating AI as a learning assistant, not a crutch—invest time in understanding the code it generates.
 
-![Example](https://img.shields.io/badge/Example:%20Basic%20Python%20Functions%20&%20Practical%20Guide-indigo?style=for-the-badge)
+![Example](images/example_5.svg)
 - Installing & Loading packages
 - Exploring pandas
 - Efficient data processing 
@@ -1121,7 +1122,7 @@ Multiprocessing is a powerful technique for leveraging multiple CPUs to run proc
 __Caution: when using multiprocessing on Koa, packages often look for the total resources on the node rather than the resources you have been allocated.__
 - This may result in overprovisioning the node and could get you in trouble - take my word on this. A simple approach is to determine the number of processers availble using the following strategies:
 
-![Example](https://img.shields.io/badge/Example:%20Determining%20available%20compute-indigo?style=for-the-badge)
+![Example](images/example_6.svg)
 - [how to see available cpus in python](https://stackoverflow.com/questions/1006289/how-to-find-out-the-number-of-cpus-using-python)
 - [how to see available cpus in R](https://stackoverflow.com/questions/47318401/r-how-to-check-how-many-cores-cpu-usage-available)
 
@@ -1234,7 +1235,7 @@ In this way, the computational efficiency of an HPC system can dramatically redu
 
 1. **Data Manipulation & Cleaning**  
 - **pandas**: Powerful data structures for data analysis, including `DataFrame` for tabular data.
-- **polars**:  
+- **polars**: A fast, multi-threaded DataFrame library designed for efficient data manipulation and querying, optimized for performance on large datasets. 
 - **numpy**: Fundamental package for numerical computations, provides array objects and routines for high-level mathematical functions.  
 - **matplotlib / seaborn**: Libraries for data visualization, `seaborn` is built on top of `matplotlib` and provides a high-level interface.  
 - **openpyxl / xlrd**: Reading and writing Excel files.  
