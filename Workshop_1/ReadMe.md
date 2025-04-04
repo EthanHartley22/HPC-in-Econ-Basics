@@ -26,6 +26,13 @@ ___
 
 ### __Using Koa__
 ___
+
+#### Visual Guide to Using Koa
+The diagram below maps the process of using Koa as an everyday tool. All of the tools illustrated in the diagram and more are discussed in detail below; however, the flow chart distils this information into the key steps to using Koa, and VS Code, on a daily basis. 
+
+![image](images/Koa_Workflow.png)
+
+
 Koa uses **Slurm** (Simple Linux Utility for Resource Management), a job scheduler that manages how users share the cluster’s resources. Instead of running programs directly on the login node (which is only for setting up jobs and managing files), you submit jobs to Slurm, which queues them up and runs them when resources are available.
 
 The eight primary partitions available to all users on Koa are detailed below. I recommend using the shared partition for interactive jobs whenever possible and a mix of the kill-shared and shared partitions for batch jobs.
